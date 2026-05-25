@@ -1,0 +1,22 @@
+==PROF== Connected to process 1096156 (/home/pierreisnotrock/anaconda3/envs/triton3060/bin/python3.10)
+gemm_medium done
+==PROF== Disconnected from process 1096156
+"ID","Process ID","Process Name","Host Name","Kernel Name","Context","Stream","Block Size","Grid Size","Device","CC","Section Name","Metric Name","Metric Unit","Metric Value"
+"0","1096156","python3.10","127.0.0.1","ampere_sgemm_128x64_nn","1","7","(128, 1, 1)","(8, 16, 5)","0","8.6","Command line profiler metrics","dram__bytes_read.sum.per_second","byte/second","98,235,772,357.72"
+"0","1096156","python3.10","127.0.0.1","ampere_sgemm_128x64_nn","1","7","(128, 1, 1)","(8, 16, 5)","0","8.6","Command line profiler metrics","gpu__compute_memory_throughput.avg.pct_of_peak_sustained_elapsed","%","60.33"
+"0","1096156","python3.10","127.0.0.1","ampere_sgemm_128x64_nn","1","7","(128, 1, 1)","(8, 16, 5)","0","8.6","Command line profiler metrics","gpu__time_active.sum","nsecond","283,392"
+"0","1096156","python3.10","127.0.0.1","ampere_sgemm_128x64_nn","1","7","(128, 1, 1)","(8, 16, 5)","0","8.6","Command line profiler metrics","l1tex__t_sector_hit_rate.pct","%","13.65"
+"0","1096156","python3.10","127.0.0.1","ampere_sgemm_128x64_nn","1","7","(128, 1, 1)","(8, 16, 5)","0","8.6","Command line profiler metrics","lts__t_sector_hit_rate.pct","%","82.91"
+"0","1096156","python3.10","127.0.0.1","ampere_sgemm_128x64_nn","1","7","(128, 1, 1)","(8, 16, 5)","0","8.6","Command line profiler metrics","sm__throughput.avg.pct_of_peak_sustained_elapsed","%","71.51"
+"1","1096156","python3.10","127.0.0.1","ampere_sgemm_128x64_nn","1","7","(128, 1, 1)","(8, 16, 5)","0","8.6","Command line profiler metrics","dram__bytes_read.sum.per_second","byte/second","98,271,989,174.56"
+"1","1096156","python3.10","127.0.0.1","ampere_sgemm_128x64_nn","1","7","(128, 1, 1)","(8, 16, 5)","0","8.6","Command line profiler metrics","gpu__compute_memory_throughput.avg.pct_of_peak_sustained_elapsed","%","60.37"
+"1","1096156","python3.10","127.0.0.1","ampere_sgemm_128x64_nn","1","7","(128, 1, 1)","(8, 16, 5)","0","8.6","Command line profiler metrics","gpu__time_active.sum","nsecond","283,776"
+"1","1096156","python3.10","127.0.0.1","ampere_sgemm_128x64_nn","1","7","(128, 1, 1)","(8, 16, 5)","0","8.6","Command line profiler metrics","l1tex__t_sector_hit_rate.pct","%","13.59"
+"1","1096156","python3.10","127.0.0.1","ampere_sgemm_128x64_nn","1","7","(128, 1, 1)","(8, 16, 5)","0","8.6","Command line profiler metrics","lts__t_sector_hit_rate.pct","%","82.87"
+"1","1096156","python3.10","127.0.0.1","ampere_sgemm_128x64_nn","1","7","(128, 1, 1)","(8, 16, 5)","0","8.6","Command line profiler metrics","sm__throughput.avg.pct_of_peak_sustained_elapsed","%","71.55"
+"2","1096156","python3.10","127.0.0.1","ampere_sgemm_128x64_nn","1","7","(128, 1, 1)","(8, 16, 5)","0","8.6","Command line profiler metrics","dram__bytes_read.sum.per_second","byte/second","98,162,015,591.46"
+"2","1096156","python3.10","127.0.0.1","ampere_sgemm_128x64_nn","1","7","(128, 1, 1)","(8, 16, 5)","0","8.6","Command line profiler metrics","gpu__compute_memory_throughput.avg.pct_of_peak_sustained_elapsed","%","60.32"
+"2","1096156","python3.10","127.0.0.1","ampere_sgemm_128x64_nn","1","7","(128, 1, 1)","(8, 16, 5)","0","8.6","Command line profiler metrics","gpu__time_active.sum","nsecond","283,232"
+"2","1096156","python3.10","127.0.0.1","ampere_sgemm_128x64_nn","1","7","(128, 1, 1)","(8, 16, 5)","0","8.6","Command line profiler metrics","l1tex__t_sector_hit_rate.pct","%","13.64"
+"2","1096156","python3.10","127.0.0.1","ampere_sgemm_128x64_nn","1","7","(128, 1, 1)","(8, 16, 5)","0","8.6","Command line profiler metrics","lts__t_sector_hit_rate.pct","%","82.95"
+"2","1096156","python3.10","127.0.0.1","ampere_sgemm_128x64_nn","1","7","(128, 1, 1)","(8, 16, 5)","0","8.6","Command line profiler metrics","sm__throughput.avg.pct_of_peak_sustained_elapsed","%","71.49"

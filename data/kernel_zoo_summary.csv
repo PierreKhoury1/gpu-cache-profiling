@@ -1,0 +1,13 @@
+label,category,sm_pct,mem_pct,time_per_launch_us,kernel_name
+Conv 28² 1→32,conv,28.26,70.39,50.24,"void implicit_convolve_sgemm<float, float, (int)128, (int)5, (int)5, (int)3, (int)3, (int)3, (int)1, (bool)0, (bool)0, (bool)1>(int, int, int, const T1 *, int, T2 *, const T1 *, kernel_conv_params, unsigned long long, int, float, float, int, const T2 *, const T2 *, bool, bool, int, int)"
+GEMM 4096³,gemm,74.71,57.74,15824.67,ampere_sgemm_128x64_nn
+FlashAttn (Triton),attention,21.25,19.75,94.91,flash_attn_fwd_kernel
+Conv 56² 64→128,conv,53.75,54.42,1608.67,_5x_cudnn_ampere_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148n_nt_v1
+GEMM 256³,gemm,36.87,36.87,13.34,ampere_sgemm_64x32_sliced1x4_nn
+GEMM 1024³,gemm,71.52,60.34,283.47,ampere_sgemm_128x64_nn
+Attn (PyTorch SDPA),attention,51.48,43.92,54.56,ampere_sgemm_128x128_tn
+Softmax,norm,37.17,73.11,104.51,"void at::native::<unnamed>::cunn_SoftMaxForwardSmem<(int)4, float, float, float, at::native::<unnamed>::SoftMaxForwardEpilogue, long>(T4 *, const T2 *, T6)"
+LayerNorm,norm,16.78,92.67,124.09,"void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)"
+ReLU,elementwise,6.50,92.76,82.46,"void at::native::vectorized_elementwise_kernel<(int)4, at::native::<unnamed>::launch_clamp_scalar(at::TensorIteratorBase &, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)"
+Reduction Σ,elementwise,7.73,82.64,50.26,"void at::native::reduce_kernel<(int)512, (int)1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator ()(at::TensorIterator &)::[lambda(float, float) (instance 1)]>, unsigned int, float, (int)4>>(T3)"
+Add (a+b),elementwise,4.15,94.52,121.94,"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)"
